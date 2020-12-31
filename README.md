@@ -1,5 +1,6 @@
 # SciManager
 Software Engineering course project
+Contributors: 刘轩舟, 赵奕炜, 谢家祺, 齐允尧, 林桁, 赵苑辰, 陈润欣, 徐雅凝, 王璐 
 
 1. Concerning codes: When compiling the codes, please unzip the package of "py37_32.zip". Then, please set the path in line 6-11 in "sci_manager_v_0_1.pro", and in line 6 in "main.cpp".
 
