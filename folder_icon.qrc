@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/gfx/icon">
+        <file>file_icon/Folder_Attempt_Generic.png</file>
+        <file>file_icon/Folder_Attempt.png</file>
+        <file>file_icon/Folder_Attempt_Dark.png</file>
+        <file>file_icon/Folder_Attempt_Generic_Dark.png</file>
+        <file>file_icon/pdf.png</file>
+        <file>file_icon/undo.png</file>
+        <file>file_icon/redo.png</file>
+        <file>search_icon/search.png</file>
+        <file>file_icon/delete.png</file>
+        <file>file_icon/server.png</file>
+        <file>file_icon/save.png</file>
+        <file>file_icon/notepad.png</file>
+        <file>file_icon/web.png</file>
+    </qresource>
+    <qresource prefix="/gfx/image">
+        <file>welcome_page/logo.png</file>
+        <file>welcome_page/welcome.jpg</file>
+    </qresource>
+</RCC>

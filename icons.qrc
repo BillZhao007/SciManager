@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>file_icon/Folder_Attempt.png</file>
+        <file>file_icon/Folder_Attempt_Dark.png</file>
+        <file>file_icon/Folder_Attempt_Generic.png</file>
+        <file>file_icon/Folder_Attempt_Generic_Dark.png</file>
+        <file>search_icon/search.png</file>
+    </qresource>
+</RCC>

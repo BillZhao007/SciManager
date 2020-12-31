@@ -1,0 +1,36 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "children": [
+                    ],
+                    "content": "folder",
+                    "name": "subfile"
+                }
+            ],
+            "content": "folder",
+            "name": "example"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                    ],
+                    "content": "folder",
+                    "name": "subfile2"
+                },
+                {
+                    "children": [
+                    ],
+                    "content": "folder",
+                    "name": "subfile3"
+                }
+            ],
+            "content": "folder",
+            "name": "example2"
+        }
+    ],
+    "content": "folder",
+    "name": "root"
+}
