@@ -67,18 +67,22 @@ void library_widget::set_up_menu_bar(){
     newLibAction->setShortcut(Qt::CTRL | Qt::Key_N);
     connect(newLibAction, SIGNAL(triggered()), this, SLOT(newLibrary()));
     fileMenu->addAction(newLibAction);
+    newLibAction->setIcon(QIcon(":/gfx/icon/file_icon/Folder_Attempt_Generic.png"));
 
     QAction* openLibAction = new QAction(tr("打开图书馆"));
     openLibAction->setShortcut(Qt::CTRL | Qt::Key_O);
     connect(openLibAction, SIGNAL(triggered()), this, SLOT(openLibrary()));
     fileMenu->addAction(openLibAction);
+    openLibAction->setIcon(QIcon(":/gfx/icon/file_icon/Folder_Attempt.png"));
 
     QAction* parseDocumentAction = new QAction(tr("解析文档"));
     parseDocumentAction->setShortcut(Qt::CTRL | Qt::Key_P);
     connect(parseDocumentAction, SIGNAL(triggered()), this, SLOT(parseDocument()));
     fileMenu->addAction(parseDocumentAction);
 
+
     QMenu* importDocumentMenu = new QMenu(tr("导入文献"));
+    importDocumentMenu->setIcon(QIcon(":/gfx/icon/file_icon/pdf.png"));
     QAction* localImportAction = new QAction(tr("本地导入"));
     localImportAction->setShortcut(Qt::CTRL | Qt::Key_L);
     connect(localImportAction, SIGNAL(triggered()), this, SLOT(localImportDocument()));
@@ -88,6 +92,7 @@ void library_widget::set_up_menu_bar(){
     connect(onlineImportAction, SIGNAL(triggered()), this, SLOT(onlineImportDocument()));
     importDocumentMenu->addAction(onlineImportAction);
     fileMenu->addMenu(importDocumentMenu);
+
 
     QAction* exportDocumentAction = new QAction(tr("导出文献"));
     exportDocumentAction->setShortcut(Qt::CTRL | Qt::Key_K);
@@ -115,6 +120,7 @@ void library_widget::set_up_menu_bar(){
     undoAction->setShortcut(Qt::CTRL | Qt::Key_Z);
     connect(undoAction, SIGNAL(triggered()), this, SLOT(undo()));
     editMenu->addAction(undoAction);
+    undoAction->setIcon(QIcon(":/gfx/icon/file_icon/undo.png"));
 
     QAction* redoAction = new QAction(tr("重做"));
     redoAction->setShortcut(Qt::CTRL | Qt::Key_Y);
@@ -212,8 +218,9 @@ void library_widget::set_up_layout(){
     splitter->addWidget(_tree_view);
     splitter->addWidget(_tab_widget);
 
-    splitter->setStretchFactor(0,4);
-    splitter->setStretchFactor(1,16);
+    /*splitter->setStretchFactor(0,4);/*
+    splitter->setStretchFactor(1,16);*/
+    splitter->setStretchFactor(1,1);
     splitter->setHandleWidth(1);
     // mainLayout
     QHBoxLayout* mainLayout = new QHBoxLayout(ui->centralwidget);

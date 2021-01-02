@@ -19,11 +19,15 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
     <widget class="QWidget" name="widget" native="true">
      <property name="styleSheet">
-      <string notr="true">image: url(:/gfx/image/welcome_page/logo.png);</string>
+      <string notr="true">image: url(:/gfx/image/welcome_page/logo.png);
+</string>
      </property>
     </widget>
    </item>

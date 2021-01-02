@@ -3,7 +3,7 @@
 #include <QApplication>
 
 int main(int argc, char *argv[]) {
-    Py_SetPythonHome(L"./Py37_32/");
+    Py_SetPythonHome(L"D:/tmp/SE2020-KittyRush/SE2020-KittyRush/Py37_32/");
 
     QApplication a(argc, argv);
 
