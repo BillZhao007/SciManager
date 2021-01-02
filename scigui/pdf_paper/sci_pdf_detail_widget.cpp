@@ -75,7 +75,7 @@ sci_pdf_detail_widget::sci_pdf_detail_widget(scicore::sci_pdf_paper* paper,QWidg
     QFont detailTableFont;
     detailTableFont.setPointSize(14);
     detailTableView->setFont(detailTableFont);
-    detailTableView->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
+    detailTableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     // detailTableView->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     // detailTableView->setShowGrid(false);
     //detailTableView->setSelectionMode(QAbstractItemView::NoSelection);
@@ -103,7 +103,9 @@ sci_pdf_detail_widget::sci_pdf_detail_widget(scicore::sci_pdf_paper* paper,QWidg
         QStandardItem* b = new QStandardItem(detialItemData[i]);
         b->setData(detialItemData[i], Qt::ToolTipRole);
         detailTableModel->setItem(i, 1, b);
+
     }
+    detailTableView->horizontalHeader()->setStretchLastSection(true);
     connect(detailTableModel,SIGNAL(itemChanged(QStandardItem *)),this,SLOT(change_info(QStandardItem*)));
 
     // tagView

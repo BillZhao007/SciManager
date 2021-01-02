@@ -7,31 +7,31 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>102</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>搜索</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>130</y>
-     <width>72</width>
-     <height>15</height>
+     <x>10</x>
+     <y>20</y>
+     <width>111</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>按名称搜索</string>
+    <string>按文献名搜索：</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_local_search">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>120</y>
-     <width>113</width>
+     <x>130</x>
+     <y>20</y>
+     <width>251</width>
      <height>21</height>
     </rect>
    </property>
@@ -40,7 +40,7 @@
    <property name="geometry">
     <rect>
      <x>290</x>
-     <y>120</y>
+     <y>60</y>
      <width>93</width>
      <height>28</height>
     </rect>
